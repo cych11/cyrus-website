@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Nunito+Sans&family=Parkinsans&display=swap');
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+body {
+  margin-left: auto;
+  margin-right: auto;
+  font: "Dm Serif Text";
+  font-family: 'DM Serif Text';
+  background-image: url('images/blue-bg.avif'); /* Replace with your image path */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+p {
+  font-family: 'Nunito Sans';
+  font-weight: bolder;
+  font-size: 20px;
+  font-size: clamp(10px, calc(15px + (40 - 20) * (90vw - 768px)/(1920 - 768)), 28px);
+}
+
+.topnav {
+  display: flex;
+  position: sticky;
+  top: 0;
+  margin-top: -10px;
+  padding: 10px;
+  font-size: 30px;
+  background-color: #1e6ccd;
+}
+
+.topnav li {
+  list-style: none;
+}
+
+.topnav .left {
+  margin-left: 1%;
+  margin-right: auto; /* keeps home on the left, rest on the right */
+}
+
+.topnav .right {
+  margin-right: 2%;
+}
+
+li a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+
+.topnav li a::after {
+  content: '';  /* create pseudo-element */
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);  /* start hidden */
+  height: 3px;  /* underline thickness */
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;  /* underline color */
+  transform-origin: bottom center;
+  transition: transform 0.25s ease-out;
+}
+
+.topnav li a:hover::after {
+  transform: scaleX(1);  /* expand underline */
+  transform-origin: bottom center;
+}
+
+#header {
+  color: #DCE6D3;
+  font-size: 110px;
+  text-align: center;
+  font: 'Parkinsans';
+  font-family: 'Parkinsans';
+}
+
+#subheader {
+  color: #DCE6D3;
+  font-size: clamp(30px, calc(40px + (40 - 20) * (90vw - 768px)/(1920 - 768)), 80px);
+  text-align: center;
+  font: 'Parkinsans';
+  font-family: 'Parkinsans';
+}
+
+.photoTextSide {
+  display: flex;
+  align-items: center;
+}
+
+#aboutMe {
+  align-items: center;
+}
+
+.textWithTitle {
+  text-align: center;
+}
+
+.gridRow {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.textWithTitle {
+  background-color: rgba(0, 0, 0, 0.42);
+  border-radius: 25px;
+  padding: 10px;
+}
+
+#homepage{
+  background-color: rgba(0, 0, 0, 0.42);
+  border-radius: 25px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.button{
+  color:#1e6ccd;
+  border-radius: 25px;
+  font-family: 'Parkinsans';
+  padding: 15px 32px;
+  text-decoration: none;
+  font-size: 32px;
+  border-style: solid;
+  border-color: #DCE6D3;
+  border-width: 2px;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.5) 50%, #DCE6D3 50%) right;
+  background-size: 200%;
+  transition: .5s ease-out;
+}
+
+.button:hover{
+  color: black;
+  font-size: 35px;
+  background-position: left;
+}
+
+.section {
+  scroll-snap-align: center;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.projects-again {
+  background: #ffffff00;
+}
+
+.project-cell {
+  width: 66%;
+  height: 500px;
+  text-align: center;
+  margin-right: 10px;
+  background: rgba(0, 0, 0, 0.5) 50%;
+  border-radius: 25px;
+  padding: 2% 2% 0% 2%;
+}
+
