@@ -12,16 +12,45 @@ body {
   margin-right: auto;
   font: "Dm Serif Text";
   font-family: 'DM Serif Text';
-  background-image: url('images/blue-bg.avif'); /* Replace with your image path */
+  background-image: url('images/blue-bg.avif');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
 
+section {
+  scroll-snap-align: center;
+  margin-top: 50vh;
+}
+
+#header {
+  color: #DCE6D3;
+  font-size: 5em;
+  text-align: center;
+  font: 'Parkinsans';
+  font-family: 'Parkinsans';
+}
+
+.secondHeader {
+  color: #DCE6D3;
+  font-size: 2.5em;
+  text-align: center;
+  font: 'Parkinsans';
+  font-family: 'Parkinsans';
+}
+
+#subheader {
+  color: #DCE6D3;
+  font-size: 2em;
+  text-align: center;
+  font-family: 'Parkinsans';
+}
+
 p {
+  color: white;
   font-family: 'Nunito Sans';
   font-weight: bolder;
-  font-size: 20px;
+  font-size: 18px;
   font-size: clamp(10px, calc(15px + (40 - 20) * (90vw - 768px)/(1920 - 768)), 28px);
 }
 
@@ -33,6 +62,8 @@ p {
   padding: 10px;
   font-size: 30px;
   background-color: #1e6ccd;
+  z-index: 1;
+
 }
 
 .topnav li {
@@ -73,53 +104,63 @@ li a {
   transform-origin: bottom center;
 }
 
-#header {
-  color: #DCE6D3;
-  font-size: 110px;
-  text-align: center;
-  font: 'Parkinsans';
-  font-family: 'Parkinsans';
-}
-
-#subheader {
-  color: #DCE6D3;
-  font-size: clamp(30px, calc(40px + (40 - 20) * (90vw - 768px)/(1920 - 768)), 80px);
-  text-align: center;
-  font: 'Parkinsans';
-  font-family: 'Parkinsans';
+.projectPicture {
+  max-width: 40%; 
+  padding-left: 2%;
 }
 
 .photoTextSide {
   display: flex;
-  align-items: center;
+  gap: 2rem;           /* space between text and image */
+  align-items: center; /* vertically align when side by side */
+  justify-content: center;
+  text-align: center;
 }
 
 #aboutMe {
-  align-items: center;
-}
-
-.textWithTitle {
-  text-align: center;
-}
-
-.gridRow {
   display: flex;
-  justify-content: space-evenly;
-  text-align: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
-.textWithTitle {
-  background-color: rgba(0, 0, 0, 0.42);
+.greyBackground {
+  background-color: rgba(0, 0, 0, 0.4);
   border-radius: 25px;
-  padding: 10px;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  flex-wrap: wrap;     /* allows items to wrap to next line */
+}
+
+#wrapText {
+  flex: 1 1 60%;       /* takes 60% of width, but flexible */
+  min-width: 200px;    /* if smaller than this, wrap occurs */
+  font-size: 24px;
+}
+
+#headshot {
+  max-width: 100%;
+  width: 400px;
+  display: flex;
+  border-radius: 8px;
+}
+
+.photoWrapper {
+  flex: 0 0 350px;  /* keep ~350px column for the image */
+  max-width: 100%;     /* responsive image */
+  height: auto;
+  display: block;
 }
 
 #homepage{
-  background-color: rgba(0, 0, 0, 0.42);
+  background-color: rgba(0, 0, 0, 0.4);
   border-radius: 25px;
   max-width: 1000px;
   margin: 0 auto;
-  text-align: center;
+  margin-top: 10%;
   padding: 2rem 1rem;
 }
 
@@ -144,22 +185,14 @@ li a {
   background-position: left;
 }
 
-.section {
-  scroll-snap-align: center;
-}
-
-* {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
 .projects-again {
   background: #ffffff00;
+  margin-top: -3%;
 }
 
 .project-cell {
   width: 66%;
-  height: 500px;
+  height: 450px;
   text-align: center;
   margin-right: 10px;
   background: rgba(0, 0, 0, 0.5) 50%;
@@ -167,3 +200,13 @@ li a {
   padding: 2% 2% 0% 2%;
 }
 
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10%;
+}
+
+#contact .button {
+  margin-top: 2%;
+}

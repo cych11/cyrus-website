@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Website</title>
+    <title>Cyrus Chung's Website</title>
     <link rel="stylesheet" href="./style.css">
 		<link rel="icon" href="./favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="./flickity.css" media="screen">
@@ -17,83 +17,72 @@
 				<li class="right"><a href="#projects">Projects</a></li>
 				<li class="right"><a href="#contact">Contact</a></li>
 			</ul>
-			<br><br><br><br><br>
-			<section id="homepage" class="section">
+			<section id="homepage">
 				<h1 id="header">Cyrus Chung's Website</h1>  
-				<h2 id="subheader" style="font-size: 30px;">3rd Year Applied Statistics Major, Computer Science and <br> Mathematical Sciences Minor at the University of Toronto</h2>
+				<h2 id="subheader">3rd Year Applied Statistics Major, Computer Science and <br> Mathematical Sciences Minor at the University of Toronto</h2>
 			</section>
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-			<section id="aboutMe" class="gridRow section">
-				<div class="textWithTitle">
-					<h2 style="font-size: 80px; color: white;">About Me</h2>
-					<p style="font-size: 23px; color: white;">
-						Hi, my name is Cyrus Chung, and I am a student at the University of Toronto entering my third year, <br>
-						majoring in statistics and minoring in computer science and mathematics. I am a passionate and <br>
-						motivated student looking to get experience in the software development industry, and I am working <br>
-						hard every day to reach my goals. Throughout the years I have worked various jobs and started projects <br>
-						that have helped me improve my skills not only as a student and developer, but also a person.  <br>
+			<section id="aboutMe">
+				<h2 id="header">About Me</h2>
+				<div class="photoTextSide greyBackground">
+					<p id="wrapText">
+						Hello, my name is Cyrus Chung, and I am a student at the University of Toronto entering my third year,
+						pursuing a major in statistics and minors in computer science and mathematics. I am a passionate and
+						motivated student looking to get experience in the software development industry, and I am working
+						hard every day to reach my goals. Throughout the years I have worked various jobs and started projects
+						that have helped me improve my skills not only as a student and developer, but also a person.
 						More about myself, I enjoy playing basketball, listening to music, and weightlifting. 
 					</p>
+					<div class="photoWrapper"><img src="images/headshot.jpg" id="headshot"></div>
 				</div>
-				<img src="images/hehe.jpg" alt="funny guy" style="height:500px; width:500px;">
 			</section>
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-			<section id="projects" class="section">
+			<section id="projects">
 				<h2 id="header">Projects</h2>
 				<div class="projects-again js-flickity"
 					data-flickity-options='{ "wrapAround": true }'>
 					<div class="project-cell">
-						<a id="subheader" href="https://github.com/cych11/rideshare-app" target="_blank">Ride Share App Simulator</a>
+						<a class="secondHeader" href="https://github.com/cych11/rideshare-app" target="_blank">Ride Share App Simulator</a>
 						<div class="photoTextSide">
-							<p style="color: white;">
+							<p>
 							The simulation consists of four key entities: Riders, drivers, the dispatcher, and the monitor. Riders request rides from their current location to a destination. Drivers drive to pick up and drop off riders. The dispatcher receives and satisfies requests from drivers for a rider, and from riders for a driver. The monitor keeps track of activities in the simulation, and when asked, generates a report of what happened during the simulation.
 							</p>
-							<img src="images/rideshare.png"  style="max-width: 40%; padding-left: 2%;">
+							<img src="images/rideshare.png" class="projectPicture">
 						</div>
 					</div>
 					<div class="project-cell">
-						<a id="subheader" href="https://github.com/cych11/treemap-visualizer" target="_blank">Treemap Visualizer</a>
+						<a class="secondHeader" href="https://github.com/cych11/treemap-visualizer" target="_blank">Treemap Visualizer</a>
 						<div class="photoTextSide">
-							<p style="color: white;">
+							<p>
 								This is an interactive treemap visualization tool featuring a general API, and specific subclasses that visualize two different kinds of data: the files and folders in your computer, and a set of research papers. This visualizer helps display the order in which subtrees are shown matters when modelling files, but not when modelling research paper data. You can also manipulate with the visualizer, by being able to collapse and expand files, and change the current folder being viewed.
 							</p>
-							<img src="images/treemap.png"  style="max-width: 30%; padding-left: 2%;">
+							<img src="images/treemap.png" class="projectPicture">
 						</div>
 					</div>
 					<div class="project-cell">
-						<a id="subheader" href="https://github.com/cych11/garbage-collector" target="_blank">Garbage Collection Algorithm</a>
+						<a class="secondHeader" href="https://github.com/cych11/garbage-collector" target="_blank">Garbage Collection Algorithm</a>
 						<div class="photoTextSide">
-							<p style="color: white;">
+							<p>
 								A simple version of mark-and-sweep implemented in C to clean up dynamically allocated memory.
 							</p>
-							<img src="images/garbage.png"  style="max-width: 40%; padding-left: 2%;">
+							<img src="images/garbage.png" class="projectPicture">
 						</div>
 					</div>
 					<div class="project-cell">
-						<a id="subheader" href="https://github.com/cych11/othello" target="_blank">Othello</a>
+						<a class="secondHeader" href="https://github.com/cych11/othello" target="_blank">Othello</a>
 						<div class="photoTextSide">
-							<p style="color: white;">
+							<p>
 								A text-based simulation of the famous board game Othello, created in Java. Allows the user to play against a friend, or against various computers that employs different tactics.
 							</p>
-							<img src="images/othello.png"  style="max-width: 40%; padding-left: 2%;">
+							<img src="images/othello.png" class="projectPicture">
 						</div>
 					</div>
 				</div>
-
-				</div>
 			</section>
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-			<section id="contact" class="section" style="text-align: center;">
+			<section id="contact">
 				<h2 id="header">Contact</h2>
 				<a href="images/Cyrus Chung - Resume.pdf" class="button" target="_blank">Resume</a>
-				<br><br><br><br>
-				<a href="https://www.linkedin.com/in/cyrus-chung-5122b8307/" class="button" target="_blank">LinkedIn</a>
-				<br><br><br><br>
+				<a href="www.linkedin.com/in/cyrus--chung" class="button" target="_blank">LinkedIn</a>
 				<a class="button" href="mailto:cyrus.cych05@gmail.com">Email</a>
-
 			</section>
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-			
 		</main>
 		<script src="index.js"></script>
 		<script src="flickity.pkgd.min.js"></script>
